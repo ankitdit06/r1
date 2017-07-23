@@ -23,6 +23,7 @@ include ("dbcon.php");
 			#header {
 				background: #ccc;
 				height: 100px;
+				
 			}
 			
 			#header h1 {
@@ -52,6 +53,8 @@ include ("dbcon.php");
 				background: #ccc;
 				text-align: center;
 				padding: 4px 0;
+				bottom:0px;
+				position:fixed;
 			}
 	
 			#wrapper {
@@ -81,17 +84,32 @@ include ("dbcon.php");
 				color: darkgreen;
 				text-decoration: none;
 			}
-		
+		.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 		</style>
 		
 		<script>
-(function(proxied) {
+
   window.alert = function() {
     document.getElementById("crak").innerHTML="Ohhh...You did it!!!!!!!!!!!!!";
-    return proxied.apply(this, arguments);
   
   };
-})(window.alert);
 </script>
 	</head>
 	
@@ -103,10 +121,18 @@ include ("dbcon.php");
 				<?php
 				if(isset($_SESSION['user'] )){
 					?>
-				<div style="float:right">
-				<h2>Welcome User,<?php echo $_SESSION['user'] ; ?>
+				<div class="dropdown" style="float:right">
+				<span>Welcome User,<?php echo $_SESSION['user'] ; ?></span>
 				
-				<a href="logout.php">Logout</a></div>
+  
+  <div class="dropdown-content">
+    <a href="changePassword.php">Change Password</a>
+  <a href="logout.php">Logout</a>
+  </div>
+  </div>
+</div>
+				
+				
 				<?php } ?>
 			</div>
 		</header>

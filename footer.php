@@ -21,6 +21,14 @@
 						<li><a href="sql_account_balance.php">Find Account Balanace</a></li>
 											</ul>
 									</div>
+									<div class="innertube">
+					<h3>Insecure Direct Object References</h3>
+					<ul>
+						<li><a href="idor1.php">Get the Account Balance for Other Users</a></li>
+						
+											</ul>
+									</div>
+									
 									<?php
 				if(isset($_SESSION['user'] )){
 					?>
