@@ -12,11 +12,9 @@ user<br/>
 Use the lab.sql file to import the SQL structure and data.
 
 Please do not forget to modify the db configurations in following php source code.
-
-doLogin.php <br/>
-xss2.php<br/>
-sql_account_balance.php<br/>
-register.php<br/>
+<br/>
+dbcon.php
+<br/>
 
 Best of Luck!!!
 
