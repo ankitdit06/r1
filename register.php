@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "acp123";
+$password = "";
 $dbname = "lab";
 
 // Create connection
