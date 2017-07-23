@@ -1,13 +1,11 @@
 
 <?php
 include("header.php");
+
 ?>
 <h4>In this example, your are suppose to hack the account table of database, you should be able to get all the accounts balance with the help of SQL Injection </h4>
 <?php
 if($_GET['acc_id']){
-$username = "root";
-$password = "";
-$hostname = "localhost"; 
 
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password) 

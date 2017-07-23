@@ -1,8 +1,5 @@
 <?php
 include("header.php");
-$username = "root";
-$password = "";
-$hostname = "localhost"; 
 
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password) 

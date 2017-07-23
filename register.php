@@ -1,9 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "acp123";
-$dbname = "lab";
-
+include ("dbcon.php");
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
