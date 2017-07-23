@@ -1,0 +1,24 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "acp123";
+$dbname = "lab";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "INSERT INTO User (user_name)
+VALUE ('".$_GET['inp1']."')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?>
