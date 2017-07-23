@@ -1,5 +1,13 @@
 <?php
+<<<<<<< HEAD
 include ("dbcon.php");
+=======
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "lab";
+
+>>>>>>> 56eb3a170a5b97d272b933d41c9b5e84e52df36e
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
