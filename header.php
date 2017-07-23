@@ -6,7 +6,7 @@ header("Pragma: no-cache");
 
 ?>
 <!DOCTYPE html>
-<!-- Template by quackit.com -->
+
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
